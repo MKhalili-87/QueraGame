@@ -1,0 +1,9 @@
+@keyframes waterfall{
+    from{
+        top: -20vh;
+        transform: translateY(-50%) ;
+    }
+    to{
+        top: 100vh;
+    }
+}

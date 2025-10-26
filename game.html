@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head >
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width , initial-scale=1.0">
+        <title>Quera game</title>
+        
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+
+        <link rel="stylesheet" href="/Styles/reset.css">
+        <link rel="stylesheet" href="/Styles/index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/Styles/animation.css">
+
+    </head>
+    <body>
+        <main class="main-container">
+        <section id="mymodal" class="modal">
+             <div id="modal-content-exit">
+                <p class="permision">آیا می خواهید از بازی خارج شوید؟</p>
+                <div class="btn-container">
+                    <button class="yes-btn" id="yes">بله🥺</button>
+                    <button class="no-btn" id="no">خیر☺️</button>
+                </div>
+            </div>
+            <div id="modal-content-replay">
+                <p class="permision">هر چی جون داشتی به فنا دادی که😶</p>
+                <div class="btn-container">
+                    <button class="yes-btn" id="replay">بازی مجدد</button>
+                    <button class="no-btn" id="dismiss">خروج</button>
+                </div>
+            </div>
+            <div id="modal-content-next">
+                <p class="permision">گنگ پر انگار خود رهبری ام😎</p>
+                <div>
+                    <div class="result-frame">
+                    <img width="72px" height="72px" src="/assets/images/Bar gold.svg"/>
+                <div class="result">
+                    <p><span id="result-point">0 </span>امتیاز</p>
+                </div>
+                </div>
+                </div>
+                <div class="btn-container">
+                    <button class="yes-btn" id="next">مرحله بعد</button>
+                    <button class="no-btn" id="exit">خروج</button>
+                </div>
+            </div>
+        </section>
+        <aside class="app-container">
+            <div class="menu-container"> 
+            <div class="info-container">
+                <div class="heart-frame">
+                <img width="72px" height="72px" src="/assets/images/Heart red.svg"/>
+                <div class="heart" id="lives">
+                    <p>3</p>
+                </div>
+                </div>
+                <div class="gold-frame">
+                    <img width="72px" height="72px" src="/assets/images/Bar gold.svg"/>
+                <div class="gold">
+                    <p><span id="point">0 </span>امتیاز</p>
+                </div>
+                </div>
+            </div>
+            <audio src="/assets/musics/Navarro.mp3" autoplay muted loop></audio>
+            <div>
+                <div class="setting">
+                    <button id="volume-btn">
+                        <img src="/assets/images/volume_up.svg" alt="volume-up" id="volume-up">
+                    <img src="/assets/images/volume_off.svg" alt="volume-off" id="volume-off">
+                    </button>
+                </div>
+                <a href="/counter.html"><button class="replay-btn">
+                    <p>
+                        شروع مجدد
+                    </p>
+                    <span>
+                        <img src="/assets/images/refresh.svg" alt="replay">
+                    </span>
+                </button>
+                </a>
+                <button class="stop-btn" id="modal-test">
+                    <p>
+                        پایان بازی
+                    </p>
+                    <span>
+                        <img src="/assets/images/Vector (1).svg" alt="Stop">
+                    </span>
+                </button>
+            </div>
+            </div>
+        </aside>
+        <section class="app-object" id="image-container">
+           
+        </section>
+        </main>
+        <script src="/Scripts/click.js"></script>
+        <script src="/Scripts/modal.js"></script>
+    </body>
+</html>
